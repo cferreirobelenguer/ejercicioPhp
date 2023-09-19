@@ -38,7 +38,7 @@ calculatePrice($totalprice, $price, $numberproducts);
         </a>
     </div>
     <h2 class="calculate_subtitle">Precio total: <?php echo $totalprice?> €</h2>
-    <form method="post" action='total.php' class="calculate_form">
+    <form method="post" action='total.php' class="calculate_form" onsubmit="return validateForm()">
         <input type="hidden" name="totalprice" value="<?php echo $totalprice; ?>">
         <div class="calculate_container">
             <label class="calculate--label" for="money">Introduce cantidad a pagar: </label>
