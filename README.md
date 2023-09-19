@@ -8,6 +8,7 @@
 
 ## Se realiza una validación mediante javascript en la que no se permita que los datos sean negativos o igual a 0, en caso de ser así no se redirige a la siguiente vista y se muestra mensaje de error.
 ![Alt text](image-2.png)
+![Alt text](image-8.png)
 
 ## En la siguiente vista se muestra el precio  incluido el IVA y se pide al usuario que introduzca la cantidad a pagar, si se pulsa a calcular cantidad a devolver pasa a una nueva vista.
 ![Alt text](image-4.png)
