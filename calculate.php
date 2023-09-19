@@ -38,13 +38,14 @@ calculatePrice($totalprice, $price, $numberproducts);
         </a>
     </div>
     <h2 class="calculate_subtitle">Precio total: <?php echo $totalprice?> €</h2>
-    <form method="post" action='calculate.php' class="calculate_form">
+    <form method="post" action='total.php' class="calculate_form">
+        <input type="hidden" name="totalprice" value="<?php echo $totalprice; ?>">
         <div class="calculate_container">
             <label class="calculate--label" for="money">Introduce cantidad a pagar: </label>
             <input class="calculate--input" type="number" name="money" id="money" required />
         </div>
         <input class="calculate--btn" type="submit" value="CALCULAR CANTIDAD A DEVOLVER" />
-        </form>
+    </form>
         <div id="error" style="color: red;"></div>
     </div>
 </body>
