@@ -17,7 +17,7 @@ function calculatePrice(&$totalprice, &$price, &$numberproducts) {
     return $totalprice;
 }
 
-echo calculatePrice($totalprice, $price, $numberproducts);
+calculatePrice($totalprice, $price, $numberproducts);
 
 ?>
 <!DOCTYPE html>
@@ -45,6 +45,22 @@ echo calculatePrice($totalprice, $price, $numberproducts);
         </div>
         <input class="calculate--btn" type="submit" value="CALCULAR CANTIDAD A DEVOLVER" />
         </form>
+        <div id="error" style="color: red;"></div>
     </div>
 </body>
+<script>
+    //form validation
+    const validateForm = () => {
+        const money = document.getElementById('money').value;
+        const error = document.getElementById('error');
+
+        if ( money <=0 ) {
+            error.textContent = 'Los números no pueden ser negativos o igual a 0.';
+            return false;
+        } else {
+            error.textContent = '';
+            return true;
+        }
+    }
+</script>
 </html>

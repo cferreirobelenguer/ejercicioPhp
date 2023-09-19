@@ -24,6 +24,7 @@
         <div id="error-message" style="color: red;"></div>
     </div>
     <script>
+        //form validation
         const validateForm = () => {
             const price = document.getElementById('price').value;
             const numberProducts = document.getElementById('numberproducts').value;
